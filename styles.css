@@ -1,0 +1,122 @@
+body {
+    background-image: linear-gradient(180deg, #005AA7, #FFFDE4);    font-family: Arial, sans-serif;
+    /*background-color: #f5f5f5;*/
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: linear-gradient(360deg, #005AA7, #FFFDE4);    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #3498db;
+}
+
+.person-selector {
+    margin-bottom: 20px;
+}
+
+.dogorcat {
+    display:inline-block;
+}
+
+label[for="dog"], label[for="cat"] {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #005AA7;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dogorcat:checked + label {
+    background-color: #005AA7;
+}
+
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 2px solid #005AA7;
+    background-color: #f2f2f2;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+select:hover {
+    border-bottom-color: #2980b9;
+}
+
+button {
+    background-color: #005AA7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFFDE4;
+    color: #005AA7;
+    font-weight: bold;
+}
+
+#result {
+    display: none; /* Initially hiding the result */
+    margin-top: 15px;
+    font-weight: bold;
+    color:#005AA7; /* Text color */
+    background-color: #FFFDE4; /* Background color */
+    padding: 10px; /* Add padding for better visibility */
+    border-radius: 5px; /* Add border-radius for a rounded look */
+    animation: fadeIn 0.5s ease;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Your other CSS styles here */
+
+footer {
+    background-color: #005AA7;
+    color: #FFFDE4;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden; /* Hide content that overflows the footer */
+}
+
+
+
+
+
+

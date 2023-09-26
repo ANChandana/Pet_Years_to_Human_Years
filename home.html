@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Conversions</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container" >
+        <label for="humanName">Name: </label>
+        <input id="humanName" name="humanName" type="text" placeholder="Enter your Name" required><br>
+        
+        <input id="dog" class="dogorcat" type="radio" name="dogorcat" value="Dog Person" onclick="choosingSection()" required>
+        <label class="radioLabel" for="dog">Dog Person</label><br>
+        
+        <input id="cat" class="dogorcat" type="radio" name="dogorcat" value="Cat Person" onclick="choosingSection()" required>
+        <label class="radioLabel" for="cat">Cat Person</label><br>
+        
+        <section id="dogSection" style="display: block;">
+            <label for="dogName">Dog's Name: </label>
+            <input id="dogName" name="dogName" type="text" placeholder="Enter your Dog's Name" required><br>
+            
+            <label for="dogAge">Dog's Age: </label>
+            <input id="dogAge" name="dogAge" type="number" placeholder="Enter your Dog's Age" required><br>
+            
+            <label for="petWeight">Choose the Weight of your pet:</label>
+            <select id="petWeight" name="petWeight" required>
+                <option value="Small Breed">Small Breed (20 pounds or less)</option>
+                <option value="Medium Breed">Medium Breed (21 to 50 pounds)</option>
+                <option value="Large Breed">Large Breed (51 to 90 pounds)</option>
+                <option value="Giant Breed">Giant Breed (Over 90 pounds)</option>
+            </select>
+        </section>
+        
+        <section id="catSection" style="display: none;">
+            <label for="catName">Cat's Name: </label>
+            <input id="catName" name="catName" type="text" placeholder="Enter your Cat's Name" required><br>
+            
+            <label for="catAge">Cat's Age: </label>
+            <input id="catAge" name="catAge" type="number" placeholder="Enter your Cat's Age" required><br>
+        </section>
+        
+        <button onclick="errormsg()" id="submitbtn" type="submit">Submit</button><br><br><br>
+        <div name="result" id="result"></div>
+    </section>
+</body>
+<footer><marquee class="scrolling-text" scroll-amount="30">Please note that these methods are still general estimates and don't take into account individual factors like a dog's health or genetics. Consulting with a veterinarian is the best way to understand your specific dog's aging process and any age-related concerns.</marquee></footer>
+</html>
